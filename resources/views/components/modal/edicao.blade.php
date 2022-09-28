@@ -5,24 +5,21 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Editar Registro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
             
-            <form method="POST" action="">
+            <form method="POST" action="/principal/editar/{{$registro->id}}">
                 @csrf
                 <div>
                     <x-input-label for="chave" :value="__('Chave')" />
-
-                    <x-text-input id="chave" class="block mt-1 w-full" type="text" name="chave" :value="{{ $registro->chave }}" required autofocus />
+                    <x-text-input id="chave" class="block mt-1 w-full" type="text" name="chave" :value="$registro->chave" required autofocus />
                 </div>
 
                 <div class="mt-4">
                     <x-input-label for="valor" :value="__('Valor')" />
 
-                    <x-text-input id="valor" class="block mt-1 w-full" type="text" name="valor" :value="old('valor')" required />
+                    <x-text-input id="valor" class="block mt-1 w-full" type="text" name="valor" :value="$registro->valor" required />
                 </div>
 
                 <div class="mt-4">
@@ -31,13 +28,14 @@
                     <x-text-input id="valor2" class="block mt-1 w-full"
                                   type="text"
                                   name="valor2"
-                                  required :value="old('valor2')"/>
+                                  required :value="$registro->valor2"/>
                 </div>
-            </form>
+            
         </div>
         <div class="modal-footer">
-          <a href="/principal/editar/{{$registro->id}}" data-toggle="modal" class="btn btn-info"data-target="#modalEdicao">Editar</a>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+          <input type="submit" data-toggle="modal" class="btn btn-outline-info" data-target="#modalEdicao" value="Editar">
+        </form>
+          <a href="/principal" class="btn btn-outline-danger">Sair</a>
         </div>
       </div>
     </div>

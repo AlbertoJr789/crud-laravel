@@ -8,11 +8,12 @@ use Illuminate\Http\Request;
 
 class PrincipalController extends Controller
 {
-    public function index(){
+    public function index() {        
 
         return view('principal',[
-            'registros' => Parametros::paginate(5),
+            'registros' => Parametros::where('deleted_at','=',null)->paginate(5),
         ]);
+
     }
 
 
