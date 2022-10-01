@@ -41,8 +41,7 @@ Após baixar os arquivos, execute a seguinte série de comandos (dentro da pasta
 
 No arquivo .env, modifique as opções que sejam compatíveis com a instância do MySQL em sua máquina:
 
-    image.png
-
+![Screenshot_2](https://user-images.githubusercontent.com/89029475/193417958-c11fab86-018e-442d-9646-b33e24a9e7f2.png)
 
 Após as configurações, migre a base de dados:
 
@@ -54,7 +53,7 @@ Para que a aplicação possa enviar e-mails de alteração de senha para o usuá
 
 Após a criação do e-mail, entre na pasta .env e preencha os campos:
 
-
+![Screenshot_1](https://user-images.githubusercontent.com/89029475/193417917-f24f01f1-b871-4def-b10a-0577130585f1.png)
 
 * 4 - Executando a aplicação
 
@@ -67,9 +66,15 @@ Para rodar o projeto, digite o comando:
 
 <h2>Login</h2>
 
+![image](https://user-images.githubusercontent.com/89029475/193418188-e55d4775-7294-4fd4-90fa-e319eab8301c.png)
+
 <h2>Tela Principal</h2>
 
+![image](https://user-images.githubusercontent.com/89029475/193418229-d90e99a4-ad20-4505-a8d8-fbf366d4686f.png)
+
 <h2>Tela de Inserção</h2>
+
+![image](https://user-images.githubusercontent.com/89029475/193418240-a5c3063c-9823-416d-a25d-790728c7dd19.png)
 
 
 
