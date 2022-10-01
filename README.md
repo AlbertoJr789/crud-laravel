@@ -14,7 +14,20 @@
 ---
 <h2>Ferramentas utilizadas</h2>
 
-Laravel Breeze: para autenticação,login e registro de usuário
 
-Bootstrap: para estilização
+    PHP: versão 8.1.6
 
+    Composer: versão 2.3.8
+
+    Versão do instalador do Laravel: 4.2.17
+
+    Laravel Breeze: para autenticação,login,registro de usuário e recuperação de senha
+
+    Bootstrap 5: para estilização
+
+<h2>Configuração do Projeto</h2>
+
+    1 - Baixe os arquivos do repositório
+     
+    2 - Execute o comando 
+   
