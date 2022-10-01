@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <x-application-logo class="w-20 h-20 fill-current text-red-600" />
             </a>
         </x-slot>
 
@@ -11,6 +11,8 @@
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
+            
+            <h1 class="display-6 text-center mb-2 text-dark ">Cadastre-se</h1>
 
             <!-- Name -->
             <div>

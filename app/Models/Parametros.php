@@ -15,10 +15,4 @@ class Parametros extends Model
         'valor2',
     ];
 
-    public function filtroDeletados($query, array $filtros){
-
-        
-
-    }
-
 }

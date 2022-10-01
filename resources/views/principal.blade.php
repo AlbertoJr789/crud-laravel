@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">
+    <x-slot name="main">
         
             @if(!empty($registroEdit))
                   <x-modal.edicao :registro="$registroEdit"/>
@@ -19,15 +19,27 @@
                 </script>
             @endif
 
+            <script>
+                $(document).ready( function () {
+                    $('#tabDados').DataTable({
+                        paging: false,
+                        "info":false,
+                        "oLanguage":{
+                            "sSearch": "Pesquisar:"
+                        }
+                    });
+                } );
+            </script>
+
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-white border-b border-gray-200">
+                    <div class="p-6 border-b">
                             {{-- Tabela de Registros --}}
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12">
                                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                                <table class="table" cellspacing="0">
+                                                <table id="tabDados" class="table mb-2" cellspacing="0">
                                                     <thead>
                                                     <tr>
                                                         <th>ID</th>
