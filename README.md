@@ -19,6 +19,8 @@
 
     Composer: versão 2.3.8
 
+    Node: versão 17.9.0
+
     Versão do instalador do Laravel: 4.2.17
 
     Laravel Breeze: para autenticação,login,registro de usuário e recuperação de senha
@@ -27,7 +29,49 @@
 
 <h2>Configuração do Projeto</h2>
 
-    1 - Baixe os arquivos do repositório
-     
-    2 - Execute o comando 
+* 1 - Configurando dependências
+    
+Após baixar os arquivos, execute a seguinte série de comandos (dentro da pasta RAIZ):
+
+    composer install (para instalar as dependências Back-end)
+
+    npm install && npm run dev (para instalar as dependências de front-end e o vite.js)
+
+* 2 - Configurando Banco de Dados
+
+No arquivo .env, modifique as opções que sejam compatíveis com a instância do MySQL em sua máquina:
+
+    image.png
+
+
+Após as configurações, migre a base de dados:
+
+    php artisan migrate
+
+* 3 - Configurando o Mailer (Recuperação de Senha)
+
+Para que a aplicação possa enviar e-mails de alteração de senha para o usuário, será necessário configurar um domínio de e-mail, neste caso, será usado o SMTP do GMAIL (logo, é necessário um endereço de e-mail Google).
+
+Após a criação do e-mail, entre na pasta .env e preencha os campos:
+
+
+
+* 4 - Executando a aplicação
+
+Para rodar o projeto, digite o comando:
+
+    php artisan serve
+
+
+<h1 align="center">Telas do Projeto</h1>
+
+<h2>Login</h2>
+
+<h2>Tela Principal</h2>
+
+<h2>Tela de Inserção</h2>
+
+
+
+
    
